@@ -205,3 +205,28 @@ header ul{
     width: 100%;
   }
 }
+
+
+/* these istructions rule the DESIGNED FOR DEVELOPERS bihavior------------------------- */
+
+#designedfordev{
+  background-color: #f4f4f4;
+}
+
+.designedfordev_img{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.designedfordev_img img{
+  width: 60%;
+  height: auto;
+}
+
+.designedfordev_img .fas{
+  font-size: 3rem;
+  margin: 0 20px;
+}
+.fa-chevron-left{
+  color: rgba(51, 3, 0, 0.6);  
+}
