@@ -6,13 +6,34 @@
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  padding-top:75px;
+}
+
+.section_title{
+  text-align: center;
+}
+
+.section_title h3{
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.section_title h3 p{
+  font-size: 2rem;
+}
+
+li{
+  list-style-type: none;
 }
 
 
 /* these istructions rule the NAVBAR bihavior------------------------- */
 header{
+  width: 100%;
+  background-color: #fff;
   position: fixed;
   top:0;
+  z-index: 999;
 }
 
 .logo_nav{
@@ -31,6 +52,7 @@ header{
 header ul{
   display: inline-block;
   border: 1px solid black;
+  margin-left: 11px;
 }
 
 .center_menu ul li,
@@ -91,7 +113,6 @@ header ul{
 
 .do_jumbotron{
   background-image: url(../img/jumbotronimg/jumbo.svg);
-  margin-top: 75px;
   padding:50px 0;
   /* debug */
   /* height: 500px; */
@@ -146,4 +167,41 @@ header ul{
 
 .jumbotron_right p{
   margin: 10px 0;
+}
+
+
+/* these istructions rule the CUSTOMER SECTION bihavior------------------------- */
+#customers{
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#customers img{
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* these istructions rule the DEPLY AND SCALE SECTION bihavior------------------------- */
+.deply_list {
+  width: 50%;
+  margin: auto;
+  border-left: 1px solid grey;
+  padding-left: 0px;
+}
+
+.deply_list ul{
+  margin-left: -30px;
+}
+
+.deply_list ul li{
+  margin: 10px;
+}
+
+
+@media all and (max-width: 768px) {
+  .deply_list{
+    width: 100%;
+  }
 }
