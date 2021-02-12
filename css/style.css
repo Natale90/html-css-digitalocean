@@ -1,0 +1,44 @@
+[class*="col"]{
+  border: 1px solid black;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+#logo{
+  max-width: 100%;
+  height: auto;
+}
+
+.right_menu{
+  float: right;
+}
+
+header ul{
+  display: inline-block;
+}
+
+.center_menu ul li,
+.right_menu ul li{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.center_menu ul li a,
+.right_menu ul li a{
+  color: #000;
+  text-decoration: none;
+}
+
+@media all and (max-width: 1199px) {
+  .center_menu,
+  .right_menu{
+    display: none;
+  }
+
+  #logo{
+    max-width: 35%;
+  }
+}
