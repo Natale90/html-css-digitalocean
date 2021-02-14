@@ -16,6 +16,7 @@ body{
 .section_title h3{
   font-size: 3rem;
   margin: 10px 0;
+  font-weight: bold;
 }
 
 .section_title h3 p{
@@ -26,6 +27,9 @@ li{
   list-style-type: none;
 }
 
+.card{
+  padding:10px 0;
+}
 
 /* these istructions rule the NAVBAR bihavior------------------------- */
 header{
@@ -247,7 +251,8 @@ header ul{
 /* these istructions rule the 12 REGIONS SECTION bihavior------------------------- */
 #service12regions{
   padding: 30px 0;
-  background-color: aquamarine;
+  background: linear-gradient(135deg, #120038 0%, #2a35b0 100%);
+  color: #fff;
 }
 
 #service12regions table{
@@ -255,8 +260,8 @@ header ul{
 }
 
 #service12regions table tr td{
-  padding: 10px 0;
-  border-bottom: 2px solid black;
+  padding: 15px 0;
+  border-bottom: 2px solid #fff;
 }
 
 #service12regions table tr td:first-child{
@@ -265,6 +270,7 @@ header ul{
 
 #service12regions table tr td:nth-child(2){
   width: 50%;
+  min-width: 190px;
 }
 
 #service12regions table tr td:last-child{
@@ -336,7 +342,7 @@ header ul{
 
 #getstarted{
   padding: 30px 0;
-  background-color: aquamarine;
+  background: linear-gradient(135deg, #120038 0%, #2a35b0 100%);
 }
 
 #getstarted .section_title {
@@ -360,4 +366,34 @@ header ul{
 footer{
   background-color:rgba(1,14,40,1);
   padding: 30px 0;
+}
+
+
+footer h5{
+  color:white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+footer a{
+  color:#d4d4d4;
+}
+
+footer p{
+  color:#d4d4d4;
+  margin: 10px 0;
+}
+
+footer p span{
+  color:#fff;
+}
+
+footer .social_box .fab{
+  font-size: 3rem;
+  color:#d4d4d4;
+  margin: 10px 10px;
+}
+
+footer .social_box .fab:first-child{
+  margin-left: 0;
 }
