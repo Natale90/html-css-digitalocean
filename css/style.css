@@ -353,3 +353,11 @@ header ul{
   background-color: #fff;
   color: blue;
 }
+
+/* these istructions rule the FOOTER bihavior------------------------- */
+
+
+footer{
+  background-color:rgba(1,14,40,1);
+  padding: 30px 0;
+}
