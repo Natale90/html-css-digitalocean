@@ -228,5 +228,45 @@ header ul{
   margin: 0 20px;
 }
 .fa-chevron-left{
-  color: rgba(51, 3, 0, 0.6);  
+  color: rgba(51, 3, 0, 0.6);
+}
+
+
+/* these istructions rule the FEATURES YOUR BUSINES NEED bihavior------------------------- */
+#features{
+  padding: 30px;
+}
+
+
+
+
+
+
+
+
+/* these istructions rule the 12 REGIONS SECTION bihavior------------------------- */
+#service12regions{
+  padding: 30px 0;
+  background-color: aquamarine;
+}
+
+#service12regions table{
+  width: 100%;
+}
+
+#service12regions table tr td{
+  padding: 10px 0;
+  border-bottom: 2px solid black;
+}
+
+#service12regions table tr td:first-child{
+  width: 20%;
+}
+
+#service12regions table tr td:nth-child(2){
+  width: 50%;
+}
+
+#service12regions table tr td:last-child{
+  width: 30%;
 }
