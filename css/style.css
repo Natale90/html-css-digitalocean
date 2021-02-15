@@ -90,6 +90,32 @@ header ul{
   text-decoration: none;
 }
 
+/* dropdownmenu---------------- */
+
+.do_dropdown{
+  width: 300px;
+  height: auto;
+  background-color: #fff;
+  position: fixed;
+  top:75px;
+  left: 329px;
+  display: none;
+  border-top: 3px solid rgb(3, 27, 78);
+}
+
+.center_menu li:first-child:hover .do_dropdown{
+  display:block;
+}
+
+.drop_product{
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px 0;
+  /* debug */
+  border:1px solid black;
+}
+
 .right_menu ul li:last-child a{
   color: blue;
   border: 1px solid blue;
