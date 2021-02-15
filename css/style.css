@@ -197,6 +197,10 @@ header ul{
   text-align: center;
 }
 
+.do_costumer_logo{
+  min-width: 150px;
+}
+
 #customers img{
   height: auto;
   object-fit: cover;
@@ -221,11 +225,6 @@ header ul{
 }
 
 
-@media all and (max-width: 768px) {
-  .deply_list{
-    width: 100%;
-  }
-}
 
 
 /* these istructions rule the DESIGNED FOR DEVELOPERS bihavior------------------------- */
@@ -293,6 +292,7 @@ table tr:last-child td{
   border-bottom: 0 !important;
 }
 
+
 /* these istructions rule the TEAM LOVE DIGITAL OCEAN section bihavior------------------------- */
 #lovedigitalocean{
   text-align: center;
@@ -301,6 +301,7 @@ table tr:last-child td{
 
 .section_slide{
   width: calc(100% - 78px);
+  height: auto;
   margin: auto;
   padding: 60px 10px;
   border-radius: 10px;
@@ -321,20 +322,22 @@ table tr:last-child td{
   margin-top: 30px;
 }
 
-
-.arrow-container, .section_slide{
-  float: left;
-}
-
-.arrow-container{
-  margin: 0 10px;
-  height: 294.25px;
-  line-height: 374.25px;
-}
-
-.arrow-container .fas.fa-chevron-right,
-.arrow-container .fas.fa-chevron-left{
+#lovedigitalocean .fas.fa-chevron-right,
+#lovedigitalocean .fas.fa-chevron-left{
   font-size: 3rem;
+  position: absolute;
+}
+
+#lovedigitalocean .fas.fa-chevron-left{
+  top:50%;
+  right:100%;
+  transform: translate(0, -50%);
+}
+
+#lovedigitalocean .fas.fa-chevron-right{
+  top:50%;
+  left:100%;
+  transform: translate(0, -50%);
 }
 
 .slide_points{
@@ -388,6 +391,7 @@ footer h5{
   color:white;
   font-weight: bold;
   font-size: 2rem;
+  margin-top: 20px;
 }
 
 footer a{
@@ -409,14 +413,45 @@ footer .social_box .fab{
   margin: 10px 10px;
 }
 
+footer .social_box a i:hover{
+  color:aquamarine;
+}
+
 footer .social_box .fab:first-child{
   margin-left: 0;
 }
 
 
 
+/* ROBOTCHAT */
 
+.robotchat p{
+  padding:0 10px;
+  position:fixed;
+  bottom:110px;
+  right: 20px;
+  border:1px solid rgba(3,27,78,0.70);
+  background-color: #fff;
+  display: none;
+}
 
+.robotchat img{
+  width: 110px;
+  height: auto;
+  border-radius: 15px;
+  position: fixed;
+  bottom:30px;
+  right: 20px;
+  transition: box-shadow 1s;
+}
+
+.robotchat:hover img{
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.robotchat:hover p{
+  display: block;
+}
 
 
 
@@ -447,10 +482,23 @@ footer .social_box .fab:first-child{
 
 /* MEDIA QUERY FOR SM RANGE */
 @media all and (max-width: 992px) {
+  /* desined for developers query */
+  .fas.fa-chevron-right,
+  .fas.fa-chevron-left{
+    display: none;
+  }
+
+  .designedfordev_img img{
+    width: 100%;
+    height: auto;
+  }
+
+
   /* 12 region query */
   td a  i{
     margin-left: 0;
   }
+
 }
 
 
@@ -459,6 +507,19 @@ footer .social_box .fab:first-child{
 
 /* MEDIA QUERY FOR XS RANGE */
 @media all and (max-width: 768px) {
+
+  /* body query */
+  body{
+    font-size: 14px;
+  }
+
+  /* navbar query */
+
+  .deply_list{
+    width: 100%;
+  }
+
+
   /* 12 region query */
 
   #right_table{
