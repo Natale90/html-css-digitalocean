@@ -82,6 +82,8 @@ header ul{
 .right_menu ul li{
   display: inline-block;
   margin: 20px 10px;
+  /* prove per dropdown */
+  position: relative;
 }
 
 .center_menu ul li a,
@@ -97,10 +99,10 @@ header ul{
   height: auto;
   background-color: #fff;
   position: fixed;
-  top:73px;
+  top:75px;
   left: 329px;
   display: none;
-  border-top: 3px solid rgb(3, 27, 78);
+  border-top: 1px solid rgb(3, 27, 78);
 }
 
 .center_menu li:first-child:hover .do_dropdown{
@@ -114,6 +116,30 @@ header ul{
   padding: 10px 0;
   /* debug */
   border:1px solid black;
+}
+
+/* comunity dropdown */
+
+.center_menu ul li ul{
+  width: 170px;
+  display: none;
+  position: absolute;
+  padding-left: 0;
+  margin: 20px 0;
+  background-color: #fff;
+}
+
+.center_menu ul li:hover ul{
+  display: block;
+}
+
+.center_menu ul li ul li{
+  display: block;
+  padding: 8px 10px;
+}
+
+.center_menu ul li ul li:hover{
+  background-color: #f4f4f4;
 }
 
 .right_menu ul li:last-child a{
@@ -218,7 +244,7 @@ header ul{
 
 
 /* these istructions rule the CUSTOMER SECTION bihavior------------------------- */
-#customers{
+/* #customers{
   background-color: #f4f4f4;
   text-align: center;
 }
@@ -231,6 +257,16 @@ header ul{
   height: auto;
   object-fit: cover;
   object-position: center;
+} */
+
+#customers {
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+#customers ul li{
+  display: inline-block;
+  margin: auto;
 }
 
 /* these istructions rule the DEPLY AND SCALE SECTION bihavior------------------------- */
@@ -497,9 +533,13 @@ footer .social_box .fab:first-child{
 
 /* ------------------------------------------------------------------------ */
 /* MEDIA QUERY FOR MD RANGE */
+  @media all and (min-width: 1200px){
+
+  }
+/* MEDIA QUERY FOR MD RANGE */
 
 
-@media all and (max-width: 1199px) {
+@media all and (min-width: 992px) and (max-width: 1200px) {
 
   /* navbar query */
   .center_menu,
@@ -515,12 +555,25 @@ footer .social_box .fab:first-child{
   .humburger_menu{
     display:block;
   }
+
+
 }
 
 
 
 /* MEDIA QUERY FOR SM RANGE */
-@media all and (max-width: 992px) {
+@media all and (max-width: 991px) {
+
+  /* navbar query */
+  .center_menu,
+  .right_menu{
+    display: none;
+  }
+
+  .humburger_menu{
+    display:block;
+  }
+
   /* desined for developers query */
   .fas.fa-chevron-right,
   .fas.fa-chevron-left{
@@ -534,7 +587,7 @@ footer .social_box .fab:first-child{
 
 
   /* 12 region query */
-  td a  i{
+  td a i{
     margin-left: 0;
   }
 
@@ -569,4 +622,5 @@ footer .social_box .fab:first-child{
   table td:nth-child(3){
     text-align: right;
   }
+
 }
