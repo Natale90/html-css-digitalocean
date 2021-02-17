@@ -1,7 +1,5 @@
 /* GENERAL WEBPAGE INSTRUCTIONS */
-/* [class*="col"]{
-  border: 1px solid black;
-} */
+
 
 body{
   font-family: 'Roboto', sans-serif;
@@ -41,7 +39,12 @@ li{
 }
 
 .card{
-  padding:10px 0;
+  padding:10px 5px;
+  transition: box-shadow 1s;
+}
+
+.card:hover{
+  box-shadow: 5px 5px 5px 5px lightgrey;
 }
 
 .card h5{
